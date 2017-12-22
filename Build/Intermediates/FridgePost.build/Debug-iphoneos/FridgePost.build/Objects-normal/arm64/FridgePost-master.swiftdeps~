@@ -1,0 +1,9 @@
+version: "Apple Swift version 4.0.3 (swiftlang-900.0.74.1 clang-900.0.39.2)"
+options: "34a28deeb66c37c8518fb4fa86a06b6c"
+build_time: [1513666769, 460829000]
+inputs:
+  "/Users/cedricnicolas/Desktop/Programming/iOS/FridgePost/FridgePost/Model/touchableView.swift": [1513657276, 0]
+  "/Users/cedricnicolas/Desktop/Programming/iOS/FridgePost/FridgePost/Model/PopUpDetail.swift": [1513657572, 0]
+  "/Users/cedricnicolas/Desktop/Programming/iOS/FridgePost/FridgePost/Controller/ViewController.swift": [1513657119, 0]
+  "/Users/cedricnicolas/Desktop/Programming/iOS/FridgePost/FridgePost/Controller/NewPostController.swift": [1513641039, 0]
+  "/Users/cedricnicolas/Desktop/Programming/iOS/FridgePost/FridgePost/Controller/AppDelegate.swift": [1513620977, 0]

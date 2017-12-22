@@ -1,0 +1,470 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4FBEE6F01FE83B0300C226DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBEE6EF1FE83B0300C226DF /* AppDelegate.swift */; };
+		4FBEE6F21FE83B0300C226DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBEE6F11FE83B0300C226DF /* ViewController.swift */; };
+		4FBEE6F51FE83B0300C226DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FBEE6F31FE83B0300C226DF /* Main.storyboard */; };
+		4FBEE6F71FE83B0300C226DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FBEE6F61FE83B0300C226DF /* Assets.xcassets */; };
+		4FBEE6FA1FE83B0300C226DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FBEE6F81FE83B0300C226DF /* LaunchScreen.storyboard */; };
+		4FBEE70A1FE83E7E00C226DF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4FBEE7091FE83E7E00C226DF /* GoogleService-Info.plist */; };
+		4FBEE70C1FE83EE800C226DF /* NewPostController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBEE70B1FE83EE800C226DF /* NewPostController.swift */; };
+		4FBEE71A1FE8876500C226DF /* touchableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBEE7191FE8876500C226DF /* touchableView.swift */; };
+		4FBEE71E1FE8B47000C226DF /* PopUpDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBEE71D1FE8B47000C226DF /* PopUpDetail.swift */; };
+		9EB6E8EE2D972B2E53F6B5F2 /* Pods_FridgePost.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A4E452EB3E16DB08FFEDD4C /* Pods_FridgePost.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0A5A8513802A7C0EC2E87650 /* Pods-FridgePost.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FridgePost.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FridgePost/Pods-FridgePost.debug.xcconfig"; sourceTree = "<group>"; };
+		1A4E452EB3E16DB08FFEDD4C /* Pods_FridgePost.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FridgePost.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FBEE6EC1FE83B0300C226DF /* FridgePost.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FridgePost.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FBEE6EF1FE83B0300C226DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4FBEE6F11FE83B0300C226DF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4FBEE6F41FE83B0300C226DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4FBEE6F61FE83B0300C226DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4FBEE6F91FE83B0300C226DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4FBEE6FB1FE83B0300C226DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4FBEE7091FE83E7E00C226DF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4FBEE70B1FE83EE800C226DF /* NewPostController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostController.swift; sourceTree = "<group>"; };
+		4FBEE7191FE8876500C226DF /* touchableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = touchableView.swift; sourceTree = "<group>"; };
+		4FBEE71D1FE8B47000C226DF /* PopUpDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpDetail.swift; sourceTree = "<group>"; };
+		7C5C216A1A09A3946E43C902 /* Pods-FridgePost.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FridgePost.release.xcconfig"; path = "Pods/Target Support Files/Pods-FridgePost/Pods-FridgePost.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4FBEE6E91FE83B0300C226DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EB6E8EE2D972B2E53F6B5F2 /* Pods_FridgePost.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4FBEE6E31FE83B0300C226DF = {
+			isa = PBXGroup;
+			children = (
+				4FBEE6EE1FE83B0300C226DF /* FridgePost */,
+				4FBEE6ED1FE83B0300C226DF /* Products */,
+				68F974DACF8C9F4353998368 /* Pods */,
+				F3E62A2E44DDEC7699786361 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4FBEE6ED1FE83B0300C226DF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4FBEE6EC1FE83B0300C226DF /* FridgePost.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4FBEE6EE1FE83B0300C226DF /* FridgePost */ = {
+			isa = PBXGroup;
+			children = (
+				4FBEE7031FE83DAD00C226DF /* Model */,
+				4FBEE7041FE83DCD00C226DF /* View */,
+				4FBEE7051FE83DDC00C226DF /* Controller */,
+				4FBEE6F61FE83B0300C226DF /* Assets.xcassets */,
+				4FBEE7061FE83DEE00C226DF /* Supporting Files */,
+			);
+			path = FridgePost;
+			sourceTree = "<group>";
+		};
+		4FBEE7031FE83DAD00C226DF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4FBEE7191FE8876500C226DF /* touchableView.swift */,
+				4FBEE71D1FE8B47000C226DF /* PopUpDetail.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4FBEE7041FE83DCD00C226DF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4FBEE6F31FE83B0300C226DF /* Main.storyboard */,
+				4FBEE6F81FE83B0300C226DF /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4FBEE7051FE83DDC00C226DF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4FBEE6EF1FE83B0300C226DF /* AppDelegate.swift */,
+				4FBEE6F11FE83B0300C226DF /* ViewController.swift */,
+				4FBEE70B1FE83EE800C226DF /* NewPostController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4FBEE7061FE83DEE00C226DF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4FBEE6FB1FE83B0300C226DF /* Info.plist */,
+				4FBEE7091FE83E7E00C226DF /* GoogleService-Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		68F974DACF8C9F4353998368 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0A5A8513802A7C0EC2E87650 /* Pods-FridgePost.debug.xcconfig */,
+				7C5C216A1A09A3946E43C902 /* Pods-FridgePost.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F3E62A2E44DDEC7699786361 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1A4E452EB3E16DB08FFEDD4C /* Pods_FridgePost.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4FBEE6EB1FE83B0300C226DF /* FridgePost */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4FBEE6FE1FE83B0300C226DF /* Build configuration list for PBXNativeTarget "FridgePost" */;
+			buildPhases = (
+				016024A6CBA459B0CD543382 /* [CP] Check Pods Manifest.lock */,
+				4FBEE6E81FE83B0300C226DF /* Sources */,
+				4FBEE6E91FE83B0300C226DF /* Frameworks */,
+				4FBEE6EA1FE83B0300C226DF /* Resources */,
+				25D8C10A25C8FE9F25581C45 /* [CP] Embed Pods Frameworks */,
+				E60FFE55DDC6095AB26FD94B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FridgePost;
+			productName = FridgePost;
+			productReference = 4FBEE6EC1FE83B0300C226DF /* FridgePost.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4FBEE6E41FE83B0300C226DF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = NativeTech;
+				TargetAttributes = {
+					4FBEE6EB1FE83B0300C226DF = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 4FBEE6E71FE83B0300C226DF /* Build configuration list for PBXProject "FridgePost" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4FBEE6E31FE83B0300C226DF;
+			productRefGroup = 4FBEE6ED1FE83B0300C226DF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4FBEE6EB1FE83B0300C226DF /* FridgePost */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4FBEE6EA1FE83B0300C226DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FBEE6FA1FE83B0300C226DF /* LaunchScreen.storyboard in Resources */,
+				4FBEE70A1FE83E7E00C226DF /* GoogleService-Info.plist in Resources */,
+				4FBEE6F71FE83B0300C226DF /* Assets.xcassets in Resources */,
+				4FBEE6F51FE83B0300C226DF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		016024A6CBA459B0CD543382 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FridgePost-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		25D8C10A25C8FE9F25581C45 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FridgePost/Pods-FridgePost-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ChameleonFramework/ChameleonFramework.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChameleonFramework.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FridgePost/Pods-FridgePost-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E60FFE55DDC6095AB26FD94B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FridgePost/Pods-FridgePost-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4FBEE6E81FE83B0300C226DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FBEE71A1FE8876500C226DF /* touchableView.swift in Sources */,
+				4FBEE71E1FE8B47000C226DF /* PopUpDetail.swift in Sources */,
+				4FBEE6F21FE83B0300C226DF /* ViewController.swift in Sources */,
+				4FBEE70C1FE83EE800C226DF /* NewPostController.swift in Sources */,
+				4FBEE6F01FE83B0300C226DF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4FBEE6F31FE83B0300C226DF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4FBEE6F41FE83B0300C226DF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4FBEE6F81FE83B0300C226DF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4FBEE6F91FE83B0300C226DF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4FBEE6FC1FE83B0300C226DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4FBEE6FD1FE83B0300C226DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4FBEE6FF1FE83B0300C226DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A5A8513802A7C0EC2E87650 /* Pods-FridgePost.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6BY3HBVP6M;
+				INFOPLIST_FILE = "$(SRCROOT)/FridgePost/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.NativeTech.FridgePost;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4FBEE7001FE83B0300C226DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C5C216A1A09A3946E43C902 /* Pods-FridgePost.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6BY3HBVP6M;
+				INFOPLIST_FILE = "$(SRCROOT)/FridgePost/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.NativeTech.FridgePost;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4FBEE6E71FE83B0300C226DF /* Build configuration list for PBXProject "FridgePost" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FBEE6FC1FE83B0300C226DF /* Debug */,
+				4FBEE6FD1FE83B0300C226DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4FBEE6FE1FE83B0300C226DF /* Build configuration list for PBXNativeTarget "FridgePost" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FBEE6FF1FE83B0300C226DF /* Debug */,
+				4FBEE7001FE83B0300C226DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4FBEE6E41FE83B0300C226DF /* Project object */;
+}

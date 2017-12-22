@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FridgePost" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f3s-CW-0gW">
+                                <rect key="frame" x="244" y="20" width="115" height="30"/>
+                                <state key="normal" title="Create New Post"/>
+                                <connections>
+                                    <action selector="newPostPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Jc-RD-VkN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="f3s-CW-0gW" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="YM2-Yh-afO"/>
+                            <constraint firstItem="f3s-CW-0gW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="cGY-sX-1fq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <segue destination="WTh-0X-aEJ" kind="show" identifier="toEdit" id="VcN-My-tJi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="46" y="117"/>
+        </scene>
+        <!--New Post Controller-->
+        <scene sceneID="bhV-oO-LGR">
+            <objects>
+                <viewController id="WTh-0X-aEJ" customClass="NewPostController" customModule="FridgePost" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="44v-Ae-z2h">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Note" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0om-Mn-Vs7">
+                                <rect key="frame" x="16" y="176" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create New Post" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iF5-YY-wKH">
+                                <rect key="frame" x="123" y="48" width="129" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ciE-2x-xi3">
+                                <rect key="frame" x="16" y="138" width="342" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z6r-lb-LFl">
+                                <rect key="frame" x="172" y="318" width="31" height="30"/>
+                                <state key="normal" title="Post"/>
+                                <connections>
+                                    <action selector="postButtonPressed:" destination="WTh-0X-aEJ" eventType="touchUpInside" id="GdR-K0-zR0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="iF5-YY-wKH" firstAttribute="centerX" secondItem="Z6r-lb-LFl" secondAttribute="centerX" id="0B1-CF-SUf"/>
+                            <constraint firstItem="0om-Mn-Vs7" firstAttribute="top" secondItem="ciE-2x-xi3" secondAttribute="bottom" constant="8" symbolic="YES" id="4pz-QJ-Nvu"/>
+                            <constraint firstItem="Z6r-lb-LFl" firstAttribute="centerY" secondItem="44v-Ae-z2h" secondAttribute="centerY" id="8aS-yE-03U"/>
+                            <constraint firstItem="iF5-YY-wKH" firstAttribute="top" secondItem="8dW-lI-TTI" secondAttribute="top" constant="28" id="IoL-dc-j9W"/>
+                            <constraint firstItem="iF5-YY-wKH" firstAttribute="centerX" secondItem="ciE-2x-xi3" secondAttribute="centerX" id="Mvf-gm-osv"/>
+                            <constraint firstItem="ciE-2x-xi3" firstAttribute="leading" secondItem="0om-Mn-Vs7" secondAttribute="leading" id="cXO-e1-7Rb"/>
+                            <constraint firstItem="ciE-2x-xi3" firstAttribute="leading" secondItem="44v-Ae-z2h" secondAttribute="leadingMargin" id="d3D-5R-EOl"/>
+                            <constraint firstItem="iF5-YY-wKH" firstAttribute="centerX" secondItem="44v-Ae-z2h" secondAttribute="centerX" id="gql-MQ-eEs"/>
+                            <constraint firstItem="ciE-2x-xi3" firstAttribute="top" secondItem="iF5-YY-wKH" secondAttribute="bottom" constant="69" id="inE-t5-m2b"/>
+                            <constraint firstItem="iF5-YY-wKH" firstAttribute="centerX" secondItem="0om-Mn-Vs7" secondAttribute="centerX" id="sA4-TN-6BG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8dW-lI-TTI"/>
+                    </view>
+                    <connections>
+                        <outlet property="textField" destination="0om-Mn-Vs7" id="dcS-lE-leR"/>
+                        <outlet property="titleTextField" destination="ciE-2x-xi3" id="5yD-SY-6za"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VZT-EU-N9s" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1063" y="116"/>
+        </scene>
+    </scenes>
+</document>
